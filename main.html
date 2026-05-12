@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>Monopoly Control</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- =========================
+         TOPBAR
+    ========================== -->
+
+    <header class="topbar">
+
+      <h1>MONOPOLY CONTROL</h1>
+
+      <p>
+        ESP32 LOCAL CONTROL PANEL
+      </p>
+
+    </header>
+
+
+    <!-- =========================
+         PAGE : HOME
+    ========================== -->
+
+    <main
+      class="page active"
+      id="homePage"
+    >
+
+      <!-- BANK -->
+
+      <section
+        class="bank-card"
+        id="bankButton"
+      >
+
+        <div class="bank-left">
+
+          <div class="bank-icon">
+            🏦
+          </div>
+
+          <div class="bank-info">
+
+            <h2>BANK</h2>
+
+            <p>
+              Total Money : $999999
+            </p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- PLAYER -->
+
+      <section class="section-title">
+
+        <h3>PLAYER</h3>
+
+      </section>
+
+
+      <section
+        class="player-list"
+        id="playerList"
+      >
+
+      </section>
+
+
+      <!-- SYSTEM -->
+
+      <section class="section-title">
+
+        <h3>SYSTEM</h3>
+
+      </section>
+
+
+      <section class="system-grid">
+
+        <div
+          class="system-card"
+          data-page="atmPage"
+        >
+          💳
+          <span>ATM</span>
+        </div>
+
+        <div
+          class="system-card"
+          data-page="auctionPage"
+        >
+          🔨
+          <span>AUCTION</span>
+        </div>
+
+        <div
+          class="system-card"
+          data-page="logsPage"
+        >
+          📜
+          <span>LOGS</span>
+        </div>
+
+        <div
+          class="system-card"
+          data-page="settingsPage"
+        >
+          ⚙️
+          <span>SETTINGS</span>
+        </div>
+
+      </section>
+
+    </main>
+
+
+    <!-- =========================
+         PAGE : ATM
+    ========================== -->
+
+    <main
+      class="page"
+      id="atmPage"
+    >
+
+      <button class="back-button">
+        ← BACK
+      </button>
+
+      <div class="page-card">
+
+        <h2>ATM TERMINAL</h2>
+
+        <p>
+          Future PN532 transaction system.
+        </p>
+
+      </div>
+
+    </main>
+
+
+    <!-- =========================
+         PAGE : AUCTION
+    ========================== -->
+
+    <main
+      class="page"
+      id="auctionPage"
+    >
+
+      <button class="back-button">
+        ← BACK
+      </button>
+
+      <div class="page-card">
+
+        <h2>AUCTION</h2>
+
+        <p>
+          Property bidding system.
+        </p>
+
+      </div>
+
+    </main>
+
+
+    <!-- =========================
+         PAGE : LOGS
+    ========================== -->
+
+    <main
+      class="page"
+      id="logsPage"
+    >
+
+      <button class="back-button">
+        ← BACK
+      </button>
+
+      <div class="page-card">
+
+        <h2>TRANSACTION LOGS</h2>
+
+        <p>
+          Transaction history will appear here.
+        </p>
+
+      </div>
+
+    </main>
+
+
+    <!-- =========================
+         PAGE : SETTINGS
+    ========================== -->
+
+    <main
+      class="page"
+      id="settingsPage"
+    >
+
+      <button class="back-button">
+        ← BACK
+      </button>
+
+      <div class="page-card">
+
+        <h2>SETTINGS</h2>
+
+        <p>
+          System configuration panel.
+        </p>
+
+      </div>
+
+    </main>
+
+  </div>
+
+  <!-- JS -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>
